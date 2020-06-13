@@ -1,0 +1,22 @@
+// Write your function here:
+function finalGrade(number1,numberb,numberc){
+   if ((number1< 0 || number1>100)|| (numberb < 0|| numberb>100)||(numberc< 0||numberc>100)){return "You have entered an invalid grade."}
+  const cacona=((number1+numberb+numberc)/3);
+
+if (cacona>=0 && cacona<=59){return "F"}
+  else if (cacona>=60 && cacona<=69){return "D"}
+  else if( cacona>=70 && cacona<=79){return "C"}
+  else if( cacona>=80 && cacona<=89){return "B"}
+  else if (cacona>=90&& cacona<=100){return "A"}
+ 
+ 
+}
+
+
+
+console.log(finalGrade(100,150,250))
+
+// Uncomment the line below when you're ready to try out your function
+// console.log(finalGrade(99, 92, 95)) // Should print 'A'
+
+// We encourage you to add more function calls of your own to test your code!
